@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 
 import java.util.Set;
 @Entity
-@Table(name = "Arquivo_Postagem")
+@Table(name = "ArquivoPostagem")
 public class ArquivoPostagem {
 
     @Id
@@ -14,7 +14,7 @@ public class ArquivoPostagem {
     private int id;
 
     @Column(name = "Arquivo_id_postagem")
-    private int idPostagem; // você pode mudar para um relacionamento se tiver uma entidade "Postagem"
+    private int idPostagem;
 
     @Column(name = "nome_arquivo", length = 100)
     private String nomeArquivo;

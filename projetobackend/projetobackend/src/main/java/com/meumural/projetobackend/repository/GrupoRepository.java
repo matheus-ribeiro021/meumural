@@ -1,4 +1,10 @@
 package com.meumural.projetobackend.repository;
 
-public interface GrupoRepository {
+import com.meumural.projetobackend.entity.Grupo;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface GrupoRepository extends JpaRepository<Grupo, Integer> {
+    // aqui você pode adicionar consultas customizadas se precisar
 }
